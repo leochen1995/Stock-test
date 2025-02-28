@@ -92,7 +92,7 @@ if response.status_code == 200:
     # 添加更改
     subprocess.run(['git', 'add', '.'])
     subprocess.run(['git', 'commit', '-m', 'Automated commit message'])
-    subprocess.run(['git', 'push', 'origin', 'main'])  # 替換 'main' 為您的分支名稱
+    subprocess.run(['git', 'push', 'origin', 'master'])  # 替換 'main' 為您的分支名稱
 
 else:
     logging.error(f"請求失敗，狀態碼：{response.status_code}")
