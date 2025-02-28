@@ -8,7 +8,7 @@ import pandas as pd
 from datetime import datetime, timedelta, timezone
 
 
-logging.info('Python timer trigger function ran at %s', datetime.datetime.utcnow().isoformat())
+# logging.info('Python timer trigger function ran at %s', datetime.datetime.utcnow().isoformat())
 
 # 設定網址
 url = "https://www.tpex.org.tw/www/zh-tw/mostActive/brokerVol?id=&response=json"
@@ -86,7 +86,7 @@ if response.status_code == 200:
     print(f"已成功將數據寫入 'output_{today}_data.xlsx' 檔案。")
 
     # Git 操作
-    repo_dir = '/path/to/your/repo'  # 本地 Git 倉庫路徑
+    repo_dir = 'D:\Codeing\dev'  # 本地 Git 倉庫路徑
     os.chdir(repo_dir)
 
     # 添加更改
